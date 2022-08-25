@@ -4,6 +4,7 @@ const lawsuitSchema = new mongoose.Schema({
     cnj_number: { type: String },
     plaintiff: { type: String },
     defendant: { type: String },
+    court: { type: String },
     date: { type: Date },
     occurrences: [{
         date: Date,
