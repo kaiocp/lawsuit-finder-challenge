@@ -11,6 +11,16 @@ class LawsuitController {
         });
     }
 
+    static getLawsuitByCourtAndCnjNumber = (req, res) => {
+        lawsuits.find(({ court: req.params.court }, { cnj_number: req.params.number }), (err, lawsuits) => {
+            if (err) {
+                res.status(400).send({ message: err.message });
+            } else {
+                res.status(200).send(lawsuits);
+            }
+        });
+    }
+
     static postLawsuit = (req, res) => {
         let lawsuit = new lawsuits(req.body);
 

@@ -2,9 +2,9 @@ import mongoose from "mongoose";
 
 const lawsuitSchema = new mongoose.Schema({
     cnj_number: { type: String },
+    court: { type: String },
     plaintiff: { type: String },
     defendant: { type: String },
-    court: { type: String },
     date: { type: Date },
     occurrences: [{
         date: Date,
