@@ -27,11 +27,13 @@ I've decided to use **TypeScript** as a React template for this project. Beyond 
 ## Dependencies
 For making HTTP requests this projects uses **Axios** over Fetch API, since it supports olders browsers and helps with JSON data transformation, among many other benefits.
 
-I'm also using **Sass** as a CSS pre-processor to increase productivity with styling components.
+I'm also using **Sass** as a CSS pre-processor to increase productivity for styling components.
 
 I've also decided to use **CSS Reset** to avoid inconsistent stylization.
 
 **CSS Modules** are also being used to avoid further conflicts between stylesheets.
+
+To make the input where the user will type the CNJ identifier to find a lawsuit I've decided to use **InputMask** to put a mask on this input.
 
 
 
