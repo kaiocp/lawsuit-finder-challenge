@@ -8,7 +8,9 @@ const DropdownInput = ({ courts, value, onChange }: Props) => {
 
     return (
         <div>
-            <select 
+            <label htmlFor="courtsDropdown"></label>
+            <select
+                id="courtsDropdown"
                 value={value}
                 onChange={onChange}
                 name="courts"
