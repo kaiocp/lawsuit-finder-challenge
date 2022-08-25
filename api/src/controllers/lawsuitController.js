@@ -16,7 +16,7 @@ class LawsuitController {
             if (err) {
                 res.status(400).send({ message: err.message });
             } else {
-                res.status(200).send(lawsuits);
+                res.status(200).json(lawsuits);
             }
         });
     }
