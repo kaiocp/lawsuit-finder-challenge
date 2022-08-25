@@ -29,7 +29,11 @@ For making HTTP requests this projects uses **Axios** over Fetch API, since it s
 
 I'm also using **Sass** as a CSS pre-processor to increase productivity with styling components.
 
+I've also decided to use **CSS Reset** to avoid inconsistent stylization.
+
 **CSS Modules** are also being used to avoid further conflicts between stylesheets.
+
+
 
 
 
