@@ -8,17 +8,18 @@ const DropdownInput = ({ courts, value, onChange }: Props) => {
 
     return (
         <div>
-            <label htmlFor="courtsDropdown"></label>
+            <label htmlFor="courtsDropdown">Selecione o tribunal</label>
             <select
                 id="courtsDropdown"
                 value={value}
                 onChange={onChange}
                 name="courts"
                 >
-            {courts.map((court, index) => (
-                <option key={index}>{court.toUpperCase()}</option>
-                )
-            )}
+                <option disabled defaultValue={'--'}></option>
+                {courts.map((court, index) => (
+                    <option key={index}>{court.toUpperCase()}</option>
+                    )
+                )}
             </select>
         </div>
     )
