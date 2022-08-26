@@ -17,6 +17,7 @@ const NumberInput = ({ value, onChange }: Props) => {
                 mask='9999999-99.9999.9.99.9999'
                 value={value}
                 onChange={onChange}
+                required
             />
         </div>
     )

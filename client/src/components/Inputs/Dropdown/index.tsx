@@ -15,8 +15,9 @@ const DropdownInput = ({ courts, value, onChange }: Props) => {
                 value={value}
                 onChange={onChange}
                 name="courts"
+                required
                 >
-                <option disabled defaultValue={'--'}></option>
+                <option disabled></option>
                 {courts.map((court, index) => (
                     <option key={index}>{court.toUpperCase()}</option>
                     )
