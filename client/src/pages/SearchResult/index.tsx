@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import http from "../../common/http";
 import Lawsuit from "../../common/interfaces/Lawsuit.interface";
 import dateFormatter from "../../common/utils/dateFormatter";
+import style from './SearchResult.module.scss';
 
 const SearchResult = () => {
     const {court, number} = useParams();
@@ -15,22 +16,23 @@ const SearchResult = () => {
     }, [court, number]);
 
     return (
-        <div>
+        <>
             {lawsuit ?
-                <section>
+                <section className={style.lawsuit}>
                     <header>
                         <h1>Processo n. {lawsuit.cnj_number} do {lawsuit.court}</h1>
                     </header>
-                    <section>
-                        <section>
+                    <section className={style.lawsuit__content}>
+                        <section className={style.lawsuit__details}>
                             <h2>Detalhes</h2>
-                            <div>
-                                <h3>Distribuído em <time dateTime={dateFormatter(lawsuit.date)}>{dateFormatter(lawsuit.date)}</time></h3>
-                                <p>Demandante: {lawsuit.plaintiff}</p>
-                                <p>Demandado/a: {lawsuit.defendant}</p>
-                            </div>
+                            <hr />
+                            <article>
+                                <h3><span>Distribuído em:</span> <time dateTime={dateFormatter(lawsuit.date)}>{dateFormatter(lawsuit.date)}</time></h3>
+                                <p><span>Demandante:</span> {lawsuit.plaintiff}</p>
+                                <p><span>Demandado/a:</span> {lawsuit.defendant}</p>
+                            </article>
                         </section>
-                        <section>
+                        <section className={style.lawsuit__occurrences}>
                             <h2>Movimentações</h2>
                             {lawsuit.occurrences.map(occurrence => (
                                 <article key={occurrence._id}>
@@ -44,7 +46,7 @@ const SearchResult = () => {
                 :
                 <h1>Nenhum processo corresponde à sua pesquisa.</h1>
             }
-        </div>
+        </>
     )
 }
 

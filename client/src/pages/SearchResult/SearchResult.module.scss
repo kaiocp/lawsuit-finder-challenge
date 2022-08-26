@@ -1,0 +1,81 @@
+@import '../../common//utils/variables';
+.lawsuit {
+    max-width: 500px;
+    margin: 0 auto;
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.8rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+        color: $deepblue;
+    }
+    span {
+        font-weight: 600;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    &__details {
+        border: 1px solid $grey;
+        border-radius: 4px;
+        padding: .5rem;
+        margin: 0 .3rem;
+        text-align: justify;
+        box-sizing: border-box;
+        article {
+            display: flex;
+            flex-direction: column;
+            row-gap: .7rem;
+            line-height: 1.5rem;
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+    &__occurrences {
+        padding: .5rem;
+        margin-top: 3rem;
+        article {
+            padding: .6rem .2rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: .5rem;
+            time {
+                font-weight: 600;
+            }
+        }
+        article:nth-of-type(odd) {
+            background-color: $grey;
+            border-radius: 3px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .lawsuit {
+        padding: 0 2rem;
+        max-width: 1300px;
+        &__content {
+            flex-direction: row-reverse;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+        &__details {
+            margin-top: 1rem;
+            width: 28%;
+            height: fit-content;
+        }
+        &__occurrences {
+            width: 60%;
+            margin-top: 0;
+        }
+    }
+}
