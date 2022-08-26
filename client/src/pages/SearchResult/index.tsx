@@ -4,6 +4,7 @@ import http from "../../common/http";
 import Lawsuit from "../../common/interfaces/Lawsuit.interface";
 import dateFormatter from "../../common/utils/dateFormatter";
 import style from './SearchResult.module.scss';
+import searchIcon from '../../common/img/search-svgrepo-com.svg';
 
 const SearchResult = () => {
     const {court, number} = useParams();
@@ -44,7 +45,10 @@ const SearchResult = () => {
                     </section>
                 </section>
                 :
-                <h1>Nenhum processo corresponde à sua pesquisa.</h1>
+                <section className={style.noresults}>
+                    <h1>Nenhum processo corresponde à sua pesquisa.</h1>
+                    <img src={searchIcon} alt="Não encontrado" />
+                </section>
             }
         </>
     )

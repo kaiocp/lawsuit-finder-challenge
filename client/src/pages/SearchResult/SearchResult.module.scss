@@ -60,6 +60,24 @@
     }
 }
 
+.noresults {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    align-items: center;
+    text-align: center;
+    h1 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: $deepblue;
+        padding: 0 3rem;
+        line-height: 2rem;
+    }
+    img {
+        max-width: 120px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .lawsuit {
         padding: 0 2rem;
