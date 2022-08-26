@@ -41,7 +41,7 @@ const Home = () => {
                             onChange={(ev) => setCourt((ev.target as HTMLSelectElement).value)}
                         />
                         <Button
-                            disabled={court && /^[0-9.-]*$/.test(cnjNumber) ? false : true}
+                            disabled={court && (/^[0-9.-]*$/.test(cnjNumber)) && cnjNumber ? false : true}
                             onClick={submit}
                         />
                     </div>
