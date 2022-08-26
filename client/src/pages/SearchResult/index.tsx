@@ -6,6 +6,7 @@ import dateFormatter from "../../common/utils/dateFormatter";
 import style from './SearchResult.module.scss';
 import searchIcon from '../../common/img/search-svgrepo-com.svg';
 import sortArrayByDate from "../../common/utils/sortArrayByDate";
+import Navbar from "../../components/Navbar";
 
 const SearchResult = () => {
     const {court, number} = useParams();
@@ -19,6 +20,7 @@ const SearchResult = () => {
 
     return (
         <>
+            <Navbar />
             {lawsuit ?
                 <section className={style.lawsuit}>
                     <header>
