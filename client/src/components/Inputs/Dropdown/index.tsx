@@ -1,3 +1,4 @@
+import style from '../Inputs.module.scss';
 interface Props {
     courts: Array<string>;
     value: string;
@@ -7,7 +8,7 @@ interface Props {
 const DropdownInput = ({ courts, value, onChange }: Props) => {
 
     return (
-        <div>
+        <div className={style.input}>
             <label htmlFor="courtsDropdown">Selecione o tribunal</label>
             <select
                 id="courtsDropdown"

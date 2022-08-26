@@ -1,0 +1,28 @@
+@import '../../common/utils/variables';
+.input {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 250px;
+    row-gap: .5rem;
+    label {
+        font-size: 1.2rem;
+    }
+    .input__field {
+        width: 100%;
+        padding: .3rem 0;
+        text-align: center;
+        border: 1px solid $grey;
+        border-radius: 6px;
+        font-size: 1.1rem;
+    }
+    select {
+        width: 100%;
+        padding: .3rem 0;
+        text-align: center;
+        border: 1px solid $grey;
+        border-radius: 6px;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+}

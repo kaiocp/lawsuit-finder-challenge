@@ -1,4 +1,5 @@
 import InputMask from "react-input-mask";
+import style from '../Inputs.module.scss';
 
 interface Props {
     value: string;
@@ -8,9 +9,10 @@ interface Props {
 const NumberInput = ({ value, onChange }: Props) => {
 
     return (
-        <div>
+        <div className={style.input}>
             <label htmlFor="cnjInput">Número do processo</label>
             <InputMask
+                className={style.input__field}
                 id="cnjInput"
                 mask='9999999-99.9999.9.99.9999'
                 value={value}
