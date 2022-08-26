@@ -9,7 +9,7 @@ const DropdownInput = ({ courts, value, onChange }: Props) => {
 
     return (
         <div className={style.input}>
-            <label htmlFor="courtsDropdown">Selecione o tribunal</label>
+            <label htmlFor="courtsDropdown">Tribunal</label>
             <select
                 id="courtsDropdown"
                 value={value}

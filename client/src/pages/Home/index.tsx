@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "../../components/Button";
 import DropdownInput from "../../components/Inputs/Dropdown";
 import NumberInput from "../../components/Inputs/NumberInput";
+import style from './Home.module.scss';
 import img from '../../common/img/balance-law-svgrepo-com.svg'
 
 
@@ -17,7 +18,7 @@ const Home = () => {
     }
 
     return (
-        <section>
+        <section className={style.home}>
             <header>
                 <h1>Consulta processual</h1>
                 <figure>
@@ -29,7 +30,7 @@ const Home = () => {
             </header>
             <form>
                 <fieldset>
-                    <h2>Digite o tribunal e identificador CNJ do processo para realizar sua busca</h2>
+                    <h2>Digite o número do processo e tribunal para realizar sua busca</h2>
                     <div>
                         <NumberInput
                             value={cnjNumber}

@@ -136,6 +136,7 @@ table {
 // global styles
 @import './common/utils/variables';
 body {
+    background-color: $lightgrey;
     font-family: $opensans;
     color: $black;
 }
