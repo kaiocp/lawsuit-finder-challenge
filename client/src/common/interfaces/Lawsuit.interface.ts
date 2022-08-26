@@ -1,5 +1,5 @@
 export default interface Lawsuit {
-    id: string;
+    _id: string;
     cnj_number: string;
     court: string;
     plaintiff: string;
@@ -8,6 +8,7 @@ export default interface Lawsuit {
     occurrences: 
         Array<{
             date: Date, 
-            description: String
+            description: string
+            _id: string;
         }>;
 }
