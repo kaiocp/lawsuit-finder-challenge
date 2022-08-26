@@ -4,17 +4,18 @@ import DropdownInput from "../../components/Inputs/Dropdown";
 import NumberInput from "../../components/Inputs/NumberInput";
 import style from './Home.module.scss';
 import img from '../../common/img/balance-law-svgrepo-com.svg'
+import { useNavigate } from "react-router-dom";
 
 
 const Home = () => {
-
     const [court, setCourt] = useState('');
     const [cnjNumber, setCnjNumber] = useState('');
 
-    const submit = (ev: any) => {
+    const navigate = useNavigate();
+
+    const submit = (ev: React.FormEvent<HTMLFormElement>) => {
         ev.preventDefault();
-        console.log(cnjNumber);
-        console.log(court);
+        navigate(`/busca/${court}/${cnjNumber}`);
     }
 
     return (
@@ -28,7 +29,7 @@ const Home = () => {
                     />
                 </figure>
             </header>
-            <form>
+            <form onSubmit={submit}>
                 <fieldset>
                     <h2>Digite o número do processo e tribunal para realizar sua busca</h2>
                     <div>
@@ -43,7 +44,6 @@ const Home = () => {
                         />
                         <Button
                             disabled={court && (/^[0-9.-]*$/.test(cnjNumber)) && cnjNumber ? false : true}
-                            onClick={submit}
                         />
                     </div>
                 </fieldset>

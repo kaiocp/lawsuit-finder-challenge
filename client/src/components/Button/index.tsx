@@ -1,14 +1,13 @@
 import style from './Button.module.scss';
 interface Props {
-    onClick: (ev: any) => void;
     disabled: boolean;
 }
 
-const Button = ({ onClick, disabled }: Props) => {
+const Button = ({ disabled }: Props) => {
     return (
         <button
+            type="submit"
             className={style.button}
-            onClick={onClick}
             disabled={disabled}
         >
             Buscar
