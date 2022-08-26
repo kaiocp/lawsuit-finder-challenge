@@ -5,6 +5,7 @@ import Lawsuit from "../../common/interfaces/Lawsuit.interface";
 import dateFormatter from "../../common/utils/dateFormatter";
 import style from './SearchResult.module.scss';
 import searchIcon from '../../common/img/search-svgrepo-com.svg';
+import sortArrayByDate from "../../common/utils/sortArrayByDate";
 
 const SearchResult = () => {
     const {court, number} = useParams();
@@ -35,7 +36,7 @@ const SearchResult = () => {
                         </section>
                         <section className={style.lawsuit__occurrences}>
                             <h2>Movimentações</h2>
-                            {lawsuit.occurrences.map(occurrence => (
+                            {sortArrayByDate(lawsuit.occurrences).map(occurrence => (
                                 <article key={occurrence._id}>
                                     <time dateTime={dateFormatter(occurrence.date)}>{dateFormatter(occurrence.date)}</time>
                                     <p>{occurrence.description}</p>
