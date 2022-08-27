@@ -5,6 +5,7 @@ import NumberInput from "../../components/Inputs/NumberInput";
 import style from './Home.module.scss';
 import img from '../../common/img/balance-law-svgrepo-com.svg'
 import { useNavigate } from "react-router-dom";
+import courtsList from "../../common/utils/courtsList";
 
 
 const Home = () => {
@@ -38,7 +39,7 @@ const Home = () => {
                             onChange={(ev) => setCnjNumber((ev.target as HTMLInputElement).value)}
                         />
                         <DropdownInput
-                            courts={['tjba', 'tjpe', 'tjsc']}
+                            courts={courtsList}
                             value={court}
                             onChange={(ev) => setCourt((ev.target as HTMLSelectElement).value)}
                         />

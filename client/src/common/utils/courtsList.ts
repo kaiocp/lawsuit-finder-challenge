@@ -1,0 +1,31 @@
+const courtsList = [
+    'tjac',
+    'tjal',
+    'tjap',
+    'tjam', 
+    'tjba',
+    'tjce',
+    'tjdft',
+    'tjes', 
+    'tjgo',
+    'tjma',
+    'tjmt',
+    'tjms', 
+    'tjmg',
+    'tjpa',
+    'tjpb',
+    'tjpr', 
+    'tjpe',
+    'tjpi',
+    'tjrj',
+    'tjrn', 
+    'tjrs',
+    'tjro',
+    'tjrr',
+    'tjsc', 
+    'tjsp',
+    'tjse',
+    'tjto'
+];
+
+export default courtsList;
