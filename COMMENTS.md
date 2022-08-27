@@ -12,6 +12,8 @@ I had to install **mongoose** to manage the connection with MongoDB.
 
 **Nodemon** is being used as a dev dependecy since it helps with productivity.
 
+The moment I started to make requests from the client side I got some cross-origin errors, which is the reason why I had to install **Cors** afterwards.
+
 ## Routes
 
 There are three routes in this API. The first one returns all lawsuits, the second one return a lawsuit based on its court and CNJ identifier and the third one post a lawsuit to the API. 
@@ -35,6 +37,8 @@ I've also decided to use **CSS Reset** to avoid inconsistent stylization.
 
 To make the input where the user will type the CNJ identifier to find a lawsuit I've decided to use **InputMask** to put a mask on this input.
 
+## Styles
+As this is a service that is related to a field known for being more "serious" I've decided to go with a sober color palette (https://coolors.co/palette/0c101b-0d1f35-102a45-c2c2c2-eaeaeb-d39b22) and typographies (Montserrat and OpenSans).
 
 
 
