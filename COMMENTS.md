@@ -40,6 +40,8 @@ To make the input where the user will type the CNJ identifier to find a lawsuit 
 ## Styles
 As this is a service that is related to a field known for being more "serious" I've decided to go with a sober color palette (https://coolors.co/palette/0c101b-0d1f35-102a45-c2c2c2-eaeaeb-d39b22) and typographies (Montserrat and OpenSans).
 
+I've also resorted to use **media queries** to make the website responsive.
+
 # Containerization
 In order to avoid cross-platform compatibility and to facilitate the execution I've decided to containerize the application with **Docker**. 
 
