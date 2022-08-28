@@ -35,15 +35,15 @@ I've also decided to use **CSS Reset** to avoid inconsistent stylization.
 
 **CSS Modules** are also being used to avoid further conflicts between stylesheets.
 
-To make the input where the user will type the CNJ identifier to find a lawsuit I've decided to use **InputMask** to put a mask on this input.
+To make the input where the user will type the CNJ identifier more user-friendly I've decided to use **InputMask** to put a mask on this input.
 
 ## Styles
-As this is a service that is related to a field known for being more "serious" I've decided to go with a sober color palette (https://coolors.co/palette/0c101b-0d1f35-102a45-c2c2c2-eaeaeb-d39b22) and typographies (Montserrat and OpenSans).
+As this is a service that is related to a field known for being more "serious" I've decided to go with sober color palette (https://coolors.co/palette/0c101b-0d1f35-102a45-c2c2c2-eaeaeb-d39b22) and typographies (Montserrat and OpenSans).
 
-I've also resorted to use **media queries** to make the website responsive.
+I've also resorted to **media queries** to make the website responsive.
 
 # Containerization
-In order to avoid cross-platform compatibility and to facilitate the execution I've decided to containerize the application with **Docker**. 
+In order to avoid cross-platform compatibility and to facilitate the execution I've decided to containerize the application with **Docker** and **Docker Compose**. 
 
 
 
