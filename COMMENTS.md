@@ -24,7 +24,7 @@ Since all we need in the client side is to return a single lawsuit based on a se
 
 ## Architecture
 
-I've decided to use **TypeScript** as a React template for this project. Beyond the many other benefits of cast typing, as we'll be making http requests to an API, TS will give us the benefit of using interfaces to the objects that will be rendered, avoiding unexpected behaviors.
+I've decided to use **TypeScript** as a React template for this project. Beyond the many other benefits of static typing, as we'll be making http requests to an API, TS will give us the benefit of using interfaces to the objects that will be rendered, avoiding unexpected behaviors.
 
 ## Dependencies
 For making HTTP requests this projects uses **Axios** over Fetch API, since it supports olders browsers and helps with JSON data transformation, among many other benefits.
