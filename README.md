@@ -38,6 +38,6 @@ $ docker-compose up
 ## 👩‍💻 Try it out!
 You can see all lawsuits that are on the database accessing http://localhost:8000/lawsuits. Next, open http://localhost:3000/
 
-Get one of the lawsuits' cnj_identifier and court properties from the lawsuits route and put it on the respective fields of the client side.
+Get one of the lawsuits' cnj_number and court properties from the lawsuits route and put it on the respective fields of the client side.
 
 
