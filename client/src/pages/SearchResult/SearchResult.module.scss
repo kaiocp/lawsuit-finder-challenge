@@ -53,6 +53,10 @@
             time {
                 font-weight: 600;
             }
+            p {
+                line-height: 1.5rem;
+                text-align: justify;
+            }
         }
         article:nth-of-type(odd) {
             background-color: $grey;
