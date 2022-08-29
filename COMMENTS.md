@@ -43,13 +43,13 @@ As this is a service that is related to a field known for being more "serious" I
 I've also resorted to **media queries** to make the website responsive. **Mobile-first** is the responsivity approach used in this project.
 
 ## Utils
-There are four files in the utils folder, inside the common folder. The **"_variables.scss"** file contains the styles variables that are used in this app.
+There are four files in the utils folder, inside the common folder. The **"_variables.scss"** file contains the style variables that are used in this app.
 
 **courtsList.ts** contains the list of all 27 state and federal district and territories courts. This file is used in the Home page to render the dropdown court list, but I've decided to put it in a separate file to avoid the pollution of the home page ts file.
 
 **dateFormatter.ts** is a pipe to format the dates in brazilian date pattern.
 
-**sortArrayByDate.ts** is a function that orders the array with the lawsuit occurrences in order to show the most recent occurrence to the older one in the SearchResult page.
+**sortArrayByDate.ts** is a function that orders the array with the lawsuit occurrences in order to show the most recent occurrence to the previous one in the SearchResult page.
 
 ## Tests
 
