@@ -4,6 +4,9 @@ This is a project that allows you to find a lawsuit based on its CNJ identifier 
 <br><br>
 ## 🛠 Dependencies
 
+Database:
+- MongoDB Atlas
+  
 API:
 - Express
 - Mongoose
@@ -11,7 +14,7 @@ API:
 - Cors
   
 Client:
-- TypeScript
+- React (with TypeScript)
 - Axios
 - Sass
 - CSS Modules
