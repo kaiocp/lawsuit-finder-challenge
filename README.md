@@ -25,7 +25,7 @@ Client:
 ```
 # Clone the repository
 
-$ git clone github.com/kaiocp/lawsuit-finder-challenge
+$ git clone https://github.com/kaiocp/lawsuit-finder-challenge.git
 ```
 
 To run the project Docker must be installed and running on your machine.
